@@ -1,0 +1,17 @@
+<!--components/tabBar/index.wxml-->
+<view class="tab">
+  <!--image src="{{bg[tabIndex]}}" class="tab-bg"></image-->
+
+  <view class="tab-bar">
+    <view wx:for="{{icon}}" bindtap="switchTabHandle" wx:key="item" data-path="{{item.path}}" data-index="{{index}}" wx:for-index="index" wx:for-item="item" class="tab-bar-item">
+      <block wx:if="{{index!==tabIndex}}">
+        <image class="tab-bar-img" src="{{item.icon}}" />
+          <text class="tab-bar-text">{{item.text}}</text>      
+      </block>
+      <block wx:else="{{index==tabIndex}}">
+        <image src="{{bg[tabIndex]}}" class="tab-bg"></image>
+          <text class="tab-bar-text">{{item.text}}</text>      
+      </block>
+    </view>
+  </view>
+</view>

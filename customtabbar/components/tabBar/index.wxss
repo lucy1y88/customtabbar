@@ -1,0 +1,44 @@
+/* components/tabBar/index.wxss */
+.tab{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 177rpx;
+  background-color: #606060;
+}
+.tab-bg{
+  background-color: #ac1414;
+  width:20vw;
+  height: 190rpx;
+}
+
+
+.tab-bar{
+  position: absolute;
+  left: 0;
+  top:20;
+  width: 100vw;
+  height: 177rpx;
+}
+.tab-bar{
+  display: flex;
+  z-index: 2000;
+  box-sizing: border-box;
+  padding-top: 30rpx;
+}
+.tab-bar-item{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.tab-bar-img{
+  width: 100rpx;
+  height: 100rpx;
+}
+.tab-bar-text{
+  font-size: 18rpx;
+  color: #c1c415;
+}
